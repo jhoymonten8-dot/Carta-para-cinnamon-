@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Alejandra 💌</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; display:flex; justify-content:center; align-items:center;
+  font-family:Georgia, "Times New Roman", serif;
+  background:linear-gradient(135deg,#f8e7ed,#f7efe4);
+  color:#4d3740; overflow-x:hidden;
+}
+.petal{position:fixed;font-size:22px;opacity:.5;animation:float 8s linear infinite;pointer-events:none}
+.p1{left:8%;top:10%}.p2{right:12%;top:18%;animation-delay:2s}.p3{left:15%;bottom:15%;animation-delay:4s}.p4{right:8%;bottom:10%;animation-delay:1s}
+@keyframes float{50%{transform:translateY(-25px) rotate(10deg)}100%{transform:translateY(0)}}
+.card{
+  width:min(92%,650px); margin:30px auto; background:#fffaf8eF; border-radius:28px;
+  padding:28px; box-shadow:0 15px 45px #6d465025; text-align:center;
+}
+h1{font-size:32px;margin:8px 0;color:#8e5267}
+.sub{font-family:Arial,sans-serif;color:#8b737b}
+button{
+  border:0;border-radius:999px;padding:14px 23px;background:#a85f78;color:white;
+  font-size:16px;cursor:pointer;box-shadow:0 7px 15px #8e526735;
+}
+.envelope{
+  margin:30px auto 20px;width:230px;height:150px;position:relative;cursor:pointer;
+  background:#d98da5;border-radius:8px;box-shadow:0 12px 25px #00000018;
+}
+.envelope:before{
+ content:"";position:absolute;left:0;top:0;border-left:115px solid transparent;
+ border-right:115px solid transparent;border-top:82px solid #edb0c1;
+ transform-origin:top;transition:.7s;z-index:3;
+}
+.envelope:after{
+ content:"💌";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+ font-size:42px;z-index:4;transition:.4s;
+}
+.open .envelope:before{transform:rotateX(180deg)}
+.open .envelope:after{opacity:0}
+.letter{
+ display:none;text-align:left;line-height:1.65;font-size:17px;animation:appear .8s ease;
+}
+.open .letter{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+.letter p{margin:0 0 16px}
+.end{text-align:center;color:#9b536e;font-weight:bold;font-size:19px}
+.small{font-family:Arial,sans-serif;font-size:13px;color:#9b878e;margin-top:18px}
+.heart{font-size:24px}
+</style>
+</head>
+<body>
+<div class="petal p1">🌸</div><div class="petal p2">🌷</div><div class="petal p3">🌸</div><div class="petal p4">💗</div>
+
+<main class="card" id="card">
+  <div class="heart">💗</div>
+  <h1>Feliz cumpleaños, Alejandra</h1>
+  <div class="sub">Tengo una pequeña cosa que decirte...</div>
+
+  <div class="envelope" onclick="openLetter()" aria-label="Abrir carta"></div>
+  <button onclick="openLetter()">Abrir mi carta 💌</button>
+
+  <section class="letter">
+    <p>No me voy a justificar con que soy olvidadiza porque tenía muy presente tu cumpleaños y aun así lo ignoré JAJAJA, perdóname por eso 😭.</p>
+
+    <p>Pero igual quería aprovechar para decirte lo mucho que te quiero y lo mucho que te extraño. De verdad espero que algún día puedas volver aunque sea unos días y salir con los muchachos un rato, porque quisiera tenerte aquí otra vez, poder abrazarte, molestarte, burlarme de ti por cualquier cosa o simplemente estar ahí hablando de cualquier estupidez como antes.</p>
+
+    <p>Alejandra, eres una amiga maravillosa. Eres una persona demasiado amable, atenta y cariñosa, y aunque probablemente no te des cuenta de todas las cosas que haces por los demás, yo sí las recuerdo.</p>
+
+    <p>Gracias a ti cambié muchas cosas de mí. Todavía me faltan muchísimas por mejorar, obviamente, porque tampoco vamos a pedir milagros JAJAJA, pero me enseñaste muchas cosas que antes no entendía. Me enseñaste lo que era querer de verdad a una amiga, preocuparse por alguien, escuchar, comprender al resto y también valorar mucho más a las personas que tengo cerca.</p>
+
+    <p>Y aunque ya no estés aquí todos los días, quiero que sepas que sigues siendo importante para mí. A veces me acuerdo de ti y pienso en lo raro que es que una persona pueda hacer tanta falta cuando antes simplemente estaba ahí, como parte de la rutina. Extraño tenerte cerca, extraño nuestras conversaciones, nuestras tonterías y hasta esas cosas que en el momento parecían normales pero ahora se sienten especiales.</p>
+
+    <p>Eres hermosa, mi canelita bella 😭. Espero de verdad que te estés adaptando poco a poco a tu nuevo colegio, que hayas conocido personas buenas y que ya no estés tan sola, mi reina. Sé que empezar de nuevo en otro lugar puede ser raro y difícil, así que espero que encuentres gente que te quiera y te valore como mereces.</p>
+
+    <p>Y si no, pues vuelves con nosotros y ya, problema solucionado. 😭</p>
+
+    <p>También espero que este nuevo año de tu vida te traiga muchas cosas bonitas, que puedas cumplir lo que quieres, que te pasen cosas que te hagan feliz y que puedas mirar atrás y decir: “verga, sí valió la pena”. Te mereces pasarla bonito hoy, comer algo rico, recibir regalos y que te consientan mucho porque es tu día.</p>
+
+    <p>Yo no tengo dinero, no tengo regalo, no tengo foto contigo TT, pero tengo mis palabras, que por más insuficientes, improvisadas y rápidas que sean, están escritas con muchísimo cariño, pensando en ti y para ti.</p>
+
+    <p>Y aunque no pueda darte algo físico, quería al menos recordarte que aquí tienes a alguien que te quiere muchísimo y que se alegra de haberte conocido.</p>
+
+    <p>Feliz cumpleaños, mi canelita. Espero que cumplas muchos más y que, aunque pase el tiempo y cada una termine siguiendo su camino, nunca se nos olvide todo lo que vivimos juntas.</p>
+
+    <p>Te quiero muchísimo, Alejandra. 💗</p>
+
+    <p class="end">Y YA, FELIZ CUMPLEAÑOS, VIEJA,<br>DISFRUTA TU DÍA ANTES DE QUE TE SALGAN ARRUGAS. 😭💗</p>
+  </section>
+
+  <div class="small">Hecha con cariño para mi canelita bella 🌷</div>
+</main>
+
+<script>
+function openLetter(){
+  document.getElementById('card').classList.add('open');
+  document.querySelector('.letter').scrollIntoView({behavior:'smooth',block:'start'});
+}
+</script>
+</body>
+</html>
